@@ -1,5 +1,5 @@
 {
-  "name": "lancer-types",
+  "name": "@tenebrae-press/lancer-types",
   "version": "0.5.0",
   "description": "Typescript types defintions for common Lancer/LCP data structures.",
   "main": "index.d.ts",
