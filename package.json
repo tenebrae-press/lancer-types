@@ -1,0 +1,36 @@
+{
+  "name": "lancer-types",
+  "version": "0.5.0",
+  "description": "Typescript types defintions for common Lancer/LCP data structures.",
+  "main": "index.d.ts",
+  "type": "module",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "engineStrict": true,
+  "scripts": {
+    "convert-from-schema": "ts-node scripts/populate.ts",
+    "test": "ts-node scripts/test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tenebrae-press/lancer-types.git"
+  },
+  "author": "Tenebrae Press",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tenebrae-press/lancer-types/issues"
+  },
+  "homepage": "https://github.com/tenebrae-press/lancer-types#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.18",
+    "@types/yargs": "^17.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "json-schema-to-typescript": "^10.1.5",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5",
+    "yargs": "^17.3.1"
+  }
+}
