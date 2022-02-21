@@ -1,4 +1,4 @@
-export interface Manifest {
+export interface IManifest {
   name: string;
   item_prefix: string;
   author: string;

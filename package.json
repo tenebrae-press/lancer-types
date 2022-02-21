@@ -1,14 +1,16 @@
 {
   "name": "@tenebrae-press/lancer-types",
-  "version": "0.5.0",
+  "version": "0.5.5",
   "description": "Typescript types defintions for common Lancer/LCP data structures.",
-  "main": "index.d.ts",
+  "main": "index.ts",
+  "types": "index.d.ts",
   "type": "module",
   "engines": {
     "node": ">=16.0.0"
   },
   "engineStrict": true,
   "scripts": {
+    "build": "tsc",
     "convert-from-schema": "ts-node scripts/populate.ts",
     "test": "ts-node scripts/test.ts"
   },

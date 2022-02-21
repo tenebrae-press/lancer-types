@@ -25,7 +25,7 @@ export interface IWeaponModData {
   frame_id?: boolean;
   ammo?: unknown[];
   allowed_types?: WeaponType[];
-  allowed_sizes?: WeaponSize[];
+  allowed_sizes?: MountType[];
   restricted_types?: WeaponType[];
   restricted_sizes?: MountType[];
   added_tags?: ITagData[];

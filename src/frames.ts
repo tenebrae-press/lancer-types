@@ -14,7 +14,7 @@ export interface IFrameData {
   mounts: [];
   stats: IFrameStats;
   traits: IFrameTraitData[];
-  core_system: ICoreData;
+  core_system: ICoreSystemData;
   y_pos?: number;
   image_url?: string;
   other_art?: {
@@ -63,7 +63,7 @@ export interface IFrameTraitData {
   [k: string]: unknown;
 }
 
-export interface ICoreData {
+export interface ICoreSystemData {
   name: string;
   description?: string;
   active_name: string;

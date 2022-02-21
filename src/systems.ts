@@ -14,6 +14,19 @@ export type SystemType =
   | "Shield"
   | "System"
   | "Tech";
+export const SYSTEM_TYPES: Array<SystemType> = [
+  "AI",
+  "Armor",
+  "Deployable",
+  "Drone",
+  "Flight System",
+  "Integrated",
+  "Mod",
+  "Shield",
+  "System",
+  "Tech",
+];
+
 export type Systems = IMechSystemData[];
 
 export interface IMechSystemData {

@@ -5,9 +5,12 @@ import { IDeployableData } from "./weapons";
 export type Reserves =
   IReserveData[];
 
+export type ReserveType = "Mech" | "Tactical" | "Resource" | "Bonus";
+export const RESERVE_TYPES: Array<ReserveType> = ["Mech", "Tactical", "Resource", "Bonus"];
+
 export interface IReserveData {
   id: string;
-  type: "Mech" | "Tactical" | "Resource" | "Bonus";
+  type: ReserveType;
   name: string;
   description?: string;
   actions?: IActionData[];
