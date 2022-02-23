@@ -67,3 +67,10 @@ export interface IBonusData {
     replace?: boolean;
     [k: string]: unknown;
 }
+
+export interface IClockData {
+    id: string
+    name: string
+    min: number
+    max: number
+}
