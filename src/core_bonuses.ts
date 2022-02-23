@@ -19,5 +19,6 @@ export interface ICoreBonusData {
   tags?: ITagData[];
   effect: string;
   mounted_effect?: string;
+  special_equipment?: Array<string>
   [k: string]: unknown;
 }

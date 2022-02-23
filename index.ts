@@ -4,6 +4,9 @@ import {
     WEAPON_SIZES, MOUNT_TYPES
 } from "./src/common";
 import {
+    LCP_CONTENT_KEYS
+} from './src/lcp';
+import {
     RESERVE_TYPES
 } from './src/reserves';
 import {
@@ -43,6 +46,7 @@ export default {
     ACTIVATION_TYPES, DAMAGE_TYPES, RANGE_TYPES,
     IMAGE_TAGS, DURATIONS, MECH_TYPES, WEAPON_TYPES,
     WEAPON_SIZES, MOUNT_TYPES,
+    LCP_CONTENT_KEYS,
     RESERVE_TYPES,
     SKILL_DETAILS,
     STATUS_TYPES, STATUS_EXCLUSIVES,

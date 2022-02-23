@@ -18,6 +18,9 @@ import { Systems } from './systems';
 import { Tags } from './tags';
 import { Talents } from './talents';
 import { Weapons } from './weapons';
+export declare type LCPContentKeys = 'actions' | 'backgrounds' | 'core_bonuses' | 'environments' | 'frames' | 'manufacturers' | 'mods' | 'npc_classes' | 'npc_features' | 'npc_templates' | 'pilot_gear' | 'reserves' | 'sitreps' | 'skills' | 'statuses' | 'systems' | 'tags' | 'talents' | 'weapons';
+export declare const LCP_CONTENT_KEYS: Array<LCPContentKeys>;
+export declare type LCPContentTypes = Actions | Backgrounds | CoreBonuses | Environments | Frames | Manufacturers | Mods | NpcClasses | NpcFeatures | NpcTemplates | PilotGear | Reserves | Sitreps | Skills | Statuses | Skills | Statuses | Systems | Tags | Talents | Weapons;
 export interface ILCPContent {
     actions?: Actions;
     backgrounds?: Backgrounds;
@@ -40,4 +43,5 @@ export interface ILCPContent {
     tables?: Record<string, Array<string>>;
     talents?: Talents;
     weapons?: Weapons;
+    [k: string]: unknown;
 }

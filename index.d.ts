@@ -30,6 +30,7 @@ declare const _default: {
     WEAPON_TYPES: import("./src/common").WeaponType[];
     WEAPON_SIZES: import("./src/common").WeaponSize[];
     MOUNT_TYPES: import("./src/common").MountType[];
+    LCP_CONTENT_KEYS: import("./src/lcp").LCPContentKeys[];
     RESERVE_TYPES: import("./src/reserves").ReserveType[];
     SKILL_DETAILS: import("./src/skills").SkillDetailTypes[];
     STATUS_TYPES: import("./src/statuses").StatusType[];

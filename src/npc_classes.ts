@@ -1,6 +1,7 @@
 export type NpcClasses = INpcClassData[];
 
 export interface INpcClassData {
+  id: string;
   name: string;
   stats: INpcClassStats;
   info: {

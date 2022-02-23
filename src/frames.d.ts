@@ -1,5 +1,5 @@
 import { IActionData } from "./actions";
-import { ActivationType, Duration, IBonusData, ICounterData, ImageTag, ISynergyData } from "./common";
+import { ActivationType, Duration, IBonusData, ICounterData, ImageTag, ISynergyData, MechType, MountType } from "./common";
 import { ITagData } from "./tags";
 import { IDeployableData } from "./weapons";
 export declare type Frames = IFrameData[];
@@ -8,8 +8,8 @@ export interface IFrameData {
     license_level: number;
     source: string;
     name: string;
-    mechtype: [];
-    mounts: [];
+    mechtype: Array<MechType>;
+    mounts: Array<MountType>;
     stats: IFrameStats;
     traits: IFrameTraitData[];
     core_system: ICoreSystemData;

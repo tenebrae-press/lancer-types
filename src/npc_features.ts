@@ -31,6 +31,8 @@ export interface IOriginData {
   type: string;
   name: string;
   base: boolean;
+  optional: boolean;
+  origin_id?: string;
   [k: string]: unknown;
 }
 

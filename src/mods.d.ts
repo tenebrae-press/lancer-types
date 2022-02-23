@@ -21,7 +21,7 @@ export interface IWeaponModData {
     sp?: number;
     talent_item?: boolean;
     frame_id?: boolean;
-    ammo?: unknown[];
+    ammo?: string[];
     allowed_types?: WeaponType[];
     allowed_sizes?: MountType[];
     restricted_types?: WeaponType[];

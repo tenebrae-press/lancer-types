@@ -1,5 +1,5 @@
 import { IActionData } from "./actions";
-import { IBonusData, ICounterData, IDamageData, ISynergyData, MountType, WeaponSize, WeaponType } from "./common";
+import { IBonusData, ICounterData, IDamageData, ISynergyData, MountType, WeaponType } from "./common";
 import { ITagData } from "./tags";
 import { IDeployableData, IRangeData } from "./weapons";
 
@@ -23,7 +23,7 @@ export interface IWeaponModData {
   sp?: number;
   talent_item?: boolean;
   frame_id?: boolean;
-  ammo?: unknown[];
+  ammo?: string[];
   allowed_types?: WeaponType[];
   allowed_sizes?: MountType[];
   restricted_types?: WeaponType[];
