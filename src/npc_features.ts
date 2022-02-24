@@ -1,5 +1,7 @@
+import { IActionData } from "./actions";
+import { IBonusData, IClockData, ICounterData, ISynergyData } from "./common";
 import { ITagData } from "./tags";
-import { IRangeData } from "./weapons";
+import { IDeployableData, IRangeData } from "./weapons";
 
 export type NpcFeatureType = "Reaction" | "System" | "Tech" | "Trait" | "Weapon";
 export type NpcFeatures = (
@@ -115,4 +117,21 @@ export interface INpcTechData {
   attack_bonus?: number[];
   tech_type: string;
   [k: string]: unknown;
+}
+export interface INpcProtocolData {
+  id: string,
+  name: string,
+  origin: IOriginData,
+  recharge: number,
+  optional: boolean,
+  hide_active: boolean,
+  effect: string,
+  type: 'Protocol',
+  tags: Array<ITagData>,
+  actions: Array<IActionData>,
+  bonuses: Array<IBonusData>,
+  synergies: Array<ISynergyData>,
+  deployables: Array<IDeployableData>,
+  counters: Array<ICounterData>,
+  clocks: Array<IClockData>,
 }
