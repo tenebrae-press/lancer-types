@@ -111,10 +111,10 @@ export interface INpcProtocolData {
     id: string;
     name: string;
     origin: IOriginData;
-    recharge: 0;
+    recharge: number;
     optional: boolean;
     hide_active: boolean;
-    effect: '';
+    effect: string;
     type: 'Protocol';
     tags: Array<ITagData>;
     actions: Array<IActionData>;
